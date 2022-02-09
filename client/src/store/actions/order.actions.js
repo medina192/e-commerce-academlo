@@ -26,7 +26,7 @@ export const addProductToCart = (token, product, qty) => {
             }
 
 			const response = await axios.post(
-				`http://localhost:3004/api/v1/orders/add-product-to-cart`,
+				`/api/v1/orders/add-product-to-cart`,
                 body,
 				config
 			);
@@ -51,7 +51,7 @@ export const getAllOrders = (token) => {
 			};
 
 			const response = await axios.get(
-				`http://localhost:3004/api/v1/orders`,
+				`/api/v1/orders`,
 				config
 			);	
 			

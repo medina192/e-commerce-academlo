@@ -58,7 +58,7 @@ const AddProduct = () => {
 
             
 			const response = await axios.post(
-				`http://localhost:3004/api/v1/products`,
+				`/api/v1/products`,
 				body,
 				config
 			);

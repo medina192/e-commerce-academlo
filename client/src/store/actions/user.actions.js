@@ -7,7 +7,7 @@ export const login = (email, password) => {
 		try {
 			const response = await axios.post(
 				//`${process.env.REACT_APP_API_URL}/users/login`,
-				'http://localhost:3004/api/v1/users/login',
+				'/api/v1/users/login',
 				{
 					email,
 					password,
@@ -31,7 +31,7 @@ export const signup = (body) => {
 		try {
 			const response = await axios.post(
 				//`${process.env.REACT_APP_API_URL}/users/login`,
-				'http://localhost:3004/api/v1/users',
+				'/api/v1/users',
 				body
 			);
 
@@ -43,7 +43,7 @@ export const signup = (body) => {
 
 			const resp = await axios.post(
 				//`${process.env.REACT_APP_API_URL}/users/login`,
-				'http://localhost:3004/api/v1/users/login',
+				'/api/v1/users/login',
 				body
 			);
 
